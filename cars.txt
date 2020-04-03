@@ -1,0 +1,152 @@
+BMW,gasoline,2000,154,sedan/coupe/cabrio/avant,5,5,65000,automatic,BMW 318i,no,bmw3_200x133
+BMW,gasoline,2000,181,sedan/coupe/cabrio/avant,5,5,70000,automatic,BMW 320i,no,bmw3_200x133
+BMW,gasoline,2000,255,sedan/coupe/cabrio/avant,5,5,75000,automatic,BMW 330i,yes,bmw3_200x133
+BMW,hybrid,2000,248,sedan/coupe/cabrio/avant,5,5,85000,automatic,BMW 330e,yes,bmw3_200x133
+BMW,gasoline,3000,382,sedan/coupe/cabrio/avant,5,5,95000,automatic,BMW M340i,yes,bmw3_200x133
+BMW,diesel,2000,122,sedan/coupe/cabrio/avant,5,5,automatic,67000,BMW 316d,no,bmw3_200x133
+BMW,diesel,2000,148,sedan/coupe/cabrio/avant,5,5,69000,automatic,BMW 318d,no,bmw3_200x133
+BMW,diesel,2000,188,sedan/coupe/cabrio/avant,5,5,72000,automatic,BMW 320d,no,bmw3_200x133
+BMW,diesel,3000,261,sedan/coupe/cabrio/avant,5,5,82000,automatic,BMW 330d,yes,bmw3_200x133
+BMW,diesel,3000,335,sedan/coupe/cabrio/avant,5,5,95000,automatic,BMW M340d,yes,bmw3_200x133
+Audi,gasoline,1200,104,sedan/hatchback,5,5,45000,automatic/manual,Audi A3 1.2 TFSI,no,a3_200x156
+Audi,gasoline,2000,220,sedan/hatchback,5,5,48000,automatic,Audi A3 40TFSI,no,a3_200x156
+Audi,gasoline,1400,148,sedan/hatchback,5,5,52000,automatic/manual,Audi A3 1.4 TFSI,no,a3_200x156
+Audi,gasoline,2000,306,sedan/hatchback,5,5,60000,automatic,Audi S3 2.0 TFSI,yes,a3_200x156
+Audi,gasoline,2500,395,sedan/hatchback,5,5,75000,automatic,Audi RS3,yes,a3_200x156
+Audi,diesel,1600,103,sedan/hatchback,5,5,50000,automatic/manual,Audi A3 1.6 TDI,no,a3_200x156
+Audi,diesel,1600,113,sedan/hatchback,5,5,53000,automatic/manual,Audi A3 30TDI,no,a3_200x156
+Audi,diesel,2000,148,sedan/hatchback,5,5,56000,automatic/manual,Audi A3 35TDI,no,a3_200x156
+Audi,diesel,2000,181,sedan/hatchback,5,5,59000,automatic/manual,Audi A3 40TDI,no,a3_200x156
+Audi,gasoline,1400,150,sedan/avant,5,5,50000,automatic/manual,Audi A4 1.4 TFSI,no,a4_200x130
+Audi,gasoline,1400,150,coupe/cabrio,2,5,55000,automatic/manual,Audi A4 1.4 TFSI,no,a4_200x130
+Audi,gasoline,2000,190,sedan/avant,5,5,55000,automatic/manual,Audi A4 40TFSI,no,a4_200x130
+Audi,gasoline,2000,190,coupe/cabrio,2,5,59000,automatic/manual,Audi A4 40TFSI,no,a4_200x130
+Audi,gasoline,2000,252,sedan/avant,5,5,55000,automatic,Audi A4 45TFSI,yes,a4_200x130
+Audi,gasoline,2000,252,coupe/cabrio,2,5,59000,automatic,Audi A4 45TFSI,yes,a4_200x130
+Audi,gasoline,3000,354,sedan,5,5,80000,automatic,Audi S4 3.0 V6 TFSI,yes,a4_200x130
+Audi,gasoline,2900,450,sedan,5,5,95000,automatic,Audi RS4,yes,a4_200x130
+Audi,diesel,2000,136,sedan/avant,5,5,55000,automatic/manual,Audi A4 35TDI,no,a4_200x130
+Audi,diesel,2000,136,coupe/cabrio,2,5,60000,automatic/manual,Audi A4 35TDI,no,a4_200x130
+Audi,diesel,2000,150,sedan/avant,5,5,57000,automatic/manual,Audi A4 2.0 TDI,no,a4_200x130
+Audi,diesel,2000,150,coupe/cabrio,2,5,62000,automatic/manual,Audi A4 2.0 TDI,no,a4_200x130
+Audi,diesel,2000,190,sedan/avant,5,5,60000,automatic/manual,Audi A4 40TDI,yes,a4_200x130
+Audi,diesel,2000,190,coupe/cabrio,2,5,65000,automatic/manual,Audi A4 40TDI,yes,a4_200x130
+Audi,diesel,3000,218,sedan/avant,5,5,60000,automatic,Audi A4 3.0TDI,yes,a4_200x130
+Audi,diesel,3000,218,coupe/cabrio,2,5,65000,automatic,Audi A4 3.0TDI,yes,a4_200x130
+Audi,gasoline,1800,168,coupe,2,5,65000,automatic/manual,Audi A5 1.8 TFSI Coupe,no,a5_200x156
+Audi,gasoline,1800,158,sedan,5,5,60000,automatic/manual,Audi A5 1.8 TFSI,no,a5_200x156
+Audi,gasoline,2000,177,sedan,5,5,65000,automatic/manual,Audi A5 2.0 TFSI,no,a5_200x156
+Audi,gasoline,2000,208,sedan,5,5,65000,automatic/manual,Audi A5 2.0 TFSI Quattro,yes,a5_200x156
+Audi,gasoline,3000,268,sedan,5,5,75000,automatic,Audi A5 3.0 TFSI Quattro,yes,a5_200x156
+Audi,gasoline,3000,329,cabrio,2,5,85000,automatic,Audi S5 3.0 TFSI Quattro Cabriolet,yes,a5_200x156
+Audi,gasoline,4200,444,coupe,2,5,100000,automatic,Audi RS5 4.2 FSI Quattro Coupe,yes,a5_200x156
+Audi,diesel,2000,134,sedan,5,5,60000,automatic/manual,Audi A5 2.0 TDIe Sportback,no,a5_200x156
+Audi,diesel,2000,141,sedan,5,5,63000,automatic/manual,Audi A5 2.0 TDI Sportback,no,a5_200x156
+Audi,diesel,2000,168,sedan,5,5,68000,automatic/manual,Audi A5 2.0 TDI Quattro,yes,a5_200x156
+Audi,diesel,2000,168,sedan,5,5,68000,automatic/manual,Audi A5 2.0 TDI Quattro,yes,a5_200x156
+Audi,hybrid,2000,252,sedan,5,5,80000,automatic,Audi A6 Hybrid,yes,a6_200x112
+Audi,gasoline,2000,178,sedan,5,5,75000,automatic,Audi A6 2.0 TFSI,no,a6_200x112
+Audi,gasoline,2000,208,sedan,5,5,77000,automatic,Audi A6 2.0 TFSI,no,a6_200x112
+Audi,gasoline,2800,200,sedan,5,5,78000,automatic,Audi A6 2.8 FSI,no,a6_200x112
+Audi,gasoline,2500,187,sedan,5,5,80000,automatic,Audi A6 2.5 FSI,no,a6_200x112
+Audi,gasoline,3000,296,sedan,5,5,85000,automatic,Audi A6 3.0 TFSI Quattro,yes,a6_200x112
+Audi,gasoline,3000,306,sedan,5,5,88000,automatic,Audi A6 3.0 TFSI Quattro,yes,a6_200x112
+Audi,gasoline,4000,415,sedan,5,5,93000,automatic,Audi S6 4.0 TFSI Quattro,yes,a6_200x112
+Audi,gasoline,4000,556,sedan,5,5,105000,automatic,Audi RS6 4.0 TFSI Quattro,yes,a6_200x112
+Audi,diesel,2000,175,sedan,5,5,75000,automatic,Audi A6 2.0 TDI,no,a6_200x112
+Audi,diesel,3000,201,sedan,5,5,78000,automatic,Audi A6 3.0 TDI,no,a6_200x112
+Audi,diesel,3000,201,sedan,5,5,83000,automatic,Audi A6 3.0 TDI Quattro,yes,a6_200x112
+Audi,diesel,3000,242,sedan,5,5,87000,automatic,Audi A6 3.0 TDI Clean Diesel Quattro,yes,a6_200x112
+Audi,diesel,3000,311,sedan,5,5,92000,automatic,Audi A6 3.0 BiTDI Quattro,yes,a6_200x112
+Audi,gasoline,2000,249,sedan,5,5,80000,automatic,Audi A7 2.0 TFSI,no,resized_a7
+Audi,gasoline,2800,201,sedan,5,5,82000,automatic,Audi A7 2.8 FSI,no,resized_a7
+Audi,gasoline,2800,201,sedan,5,5,85000,automatic,Audi A7 2.8 FSI Quattro,yes,resized_a7
+Audi,gasoline,3000,296,sedan,5,5,85000,automatic,Audi A7 3.0 FSI Quattro,yes,resized_a7
+Audi,gasoline,4000,414,sedan,5,5,100000,automatic,Audi S7 4.0 TFSI Quattro,yes,resized_a7
+Audi,gasoline,4000,552,sedan,5,5,125000,automatic,Audi RS7 4.0 TFSI Quattro,yes,resized_a7
+Audi,gasoline,3000,335,sedan,5,5,100000,automatic,Audi A8L 55TFSI Quattro,yes,a8_200x156
+Audi,gasoline,4000,454,sedan,5,5,110000,automatic,Audi A8L 60TFSI Quattro,yes,a8_200x156
+Audi,hybrid,3000,443,sedan,5,5,130000,automatic,Audi A8L e-tron PHEV Quattro,yes,a8_200x156
+Audi,gasoline,2000,249,SUV,5,5,90000,automatic,Audi Q7 2.0 TFSI,yes,q7_200x156
+Audi,gasoline,2000,249,SUV,5,5,92000,automatic,Audi Q7 2.0 TFSI PHEV,yes,q7_200x156
+Audi,gasoline,3000,340,SUV,5,5,97000,automatic,Audi Q7 3.0 TFSI,yes,q7_200x156
+Audi,gasoline,3000,376,SUV,5,5,105000,automatic,Audi Q7 55TFSI e,yes,q7_200x156
+Audi,gasoline,4000,500,SUV,5,5,115000,automatic,Audi SQ7,yes,q7_200x156
+Audi,diesel,3000,228,SUV,5,5,90000,automatic,Audi Q7 45 TDI,yes,q7_200x156
+Audi,diesel,3000,282,SUV,5,5,95000,automatic,Audi Q7 50 TDI,yes,q7_200x156
+Audi,diesel,4000,429,SUV,5,5,95000,automatic,Audi SQ7 TDI,yes,q7_200x156
+Skoda,diesel,2000,150,sedan,5,5,28000,automatic,Skoda Octavia 2.0 TDI,no,octavia_200x156
+Skoda,diesel,1600,115,sedan,5,5,24000,automatic,Skoda Octavia 1.6 TDI,no,octavia_200x156
+Skoda,diesel,2000,150,sedan,5,5,25000,automatic,Skoda Octavia 2.0 TDI,yes,octavia_200x156
+Skoda,gasoline,1000,115,sedan,5,5,22000,manual,Skoda Octavia 1.0 TSI,no,octavia_200x156
+Skoda,gasoline,1000,115,sedan,5,5,23000,automatic,Skoda Octavia 1.0 TSI,no,octavia_200x156
+Skoda,diesel,2000,190,sedan,5,4,34000,automatic,Skoda Superb 2.0 TDI,yes,superb_200x156
+Skoda,diesel,2000,190,sedan,5,4,31000,automatic,Skoda Superb 2.0 TDI,no,superb_200x156
+Skoda,diesel,2000,150,sedan,5,4,30000,automatic,Skoda Superb 2.0 TDI,no,superb_200x156
+Skoda,diesel,2000,150,sedan,5,4,29000,manual,Skoda Superb 2.0 TDI,no,superb_200x156
+Skoda,gasoline,2000,190,sedan,5,4,30000,automatic,Skoda Superb 2.0 TSI,no,superb_200x156
+Ford,diesel,2000,190,sedan,4,5,42000,automatic,Ford Mondeo DSL,no,mondeo_200x156
+Ford,diesel,2000,190,sedan,4,5,43000,automatic,Ford Mondeo DSL,yes,mondeo_200x156
+Ford,gasoline,1000,125,hatchback/sedan,5,5,19000,manual,Ford Focus T,no,focus_200x133
+Ford,gasoline,1500,150,hatchback/sedan,5,5,23000,manual,Ford Focus T,no,focus_200x133
+Ford,gasoline,1500,182,hatchback/sedan,5,5,23500,manual,Ford Focus T,no,focus_200x133
+Ford,gasoline,2300,280,hatchback/sedan,5,5,19000,manual,Ford Focus ST3,no,focus_200x133
+Ford,diesel,1500,120,hatchback/sedan,5,5,21000,manual,Ford Focus T,no,focus_200x133
+Ford,gasoline,1000,125,SUV,5,5,19500,manual,Ford Kuga Fox,no,kuga_200x156
+Ford,gasoline,1000,125,SUV,5,5,22500,automatic,Ford Kuga Fox,no,kuga_200x156
+Ford,gasoline,1500,100,SUV,5,5,20000,manual,Ford Kuga Fox,no,kuga_200x156
+Volkswagen,gasoline,1400,125,avant,5,5,41000,manual,Volkswagen Passat 1.4 TSI,no,passat_200x156
+Volkswagen,gasoline,1800,178,avant,5,5,44000,automatic,Volkswagen Passat 1.8 TSI,no,passat_200x156
+Volkswagen,gasoline,2000,217,avant,5,5,46000,automatic,Volkswagen Passat 2.0 TSI,no,passat_200x156
+Volkswagen,gasoline,1400,125,sedan,5,5,40000,manual,Volkswagen Passat 1.4 TSI,no,passat_200x156
+Volkswagen,gasoline,1800,178,sedan,5,5,43000,automatic,Volkswagen Passat 1.8 TSI,no,passat_200x156
+Volkswagen,gasoline,2000,217,sedan,5,5,45000,automatic,Volkswagen Passat 2.0 TSI,no,passat_200x156
+Volkswagen,diesel,1600,118,sedan,4,5,39000,manual,Volkswagen Passat 1.6 TDI,no,passat_200x156
+Volkswagen,diesel,2000,148,sedan,4,5,41000,automatic,Volkswagen Passat 2.0 TDI,no,passat_200x156
+Volkswagen,diesel,2000,187,sedan,4,5,45000,automatic,Volkswagen Passat 2.0 TDI,yes,passat_200x156
+Volkswagen,diesel,2000,237,sedan,4,5,48000,automatic,Volkswagen Passat 2.0 TDI,yes,passat_200x156
+Volkswagen,gasoline,1200,84,hatckback,4,5,30000,manual,Volkswagen Golf 1.2 TSI,no,golf_200x124
+Volkswagen,gasoline,1400,123,hatckback,4,5,33000,manual,Volkswagen Golf 1.4 TSI,no,golf_200x124
+Volkswagen,gasoline,1800,170,hatckback,4,5,35000,automatic,Volkswagen Golf 1.8 TSI,no,golf_200x124
+Volkswagen,gasoline,2000,227,hatckback,4,5,37000,automatic,Volkswagen Golf 2.0 GTI,no,golf_200x124
+Volkswagen,gasoline,2000,296,hatckback,4,5,39000,automatic,Volkswagen Golf R,yes,golf_200x124
+Volkswagen,diesel,1600,89,hatckback,4,5,32000,manual,Volkswagen Golf 1.6 TDI,no,golf_200x124
+Volkswagen,diesel,2000,108,hatckback,4,5,35000,manual,Volkswagen Golf 2.0 TDI,no,golf_200x124
+Volkswagen,diesel,2000,148,hatckback,4,5,37000,manual,Volkswagen Golf 2.0 TDI,no,golf_200x124
+Volkswagen,diesel,2000,89,hatckback,4,5,32000,manual,Volkswagen Golf 2.0 TDI,no,golf_200x124
+Volkswagen,electrical,0,134,hatckback,4,5,33000,automatic,Volkswagen Golf E,yes,golf_200x124
+Volkswagen,gasoline,1400,122,SUV,5,5,40000,manual,Volkswagen Tiguan TSI,no,tiguan_200x156
+Volkswagen,gasoline,1400,150,SUV,5,5,44000,manual,Volkswagen Tiguan TSI,no,tiguan_200x156
+Volkswagen,gasoline,2000,250,SUV,5,5,48000,automatic,Volkswagen Tiguan TSI,yes,tiguan_200x156
+Volkswagen,gasoline,2000,350,SUV,5,5,52000,automatic,Volkswagen Tiguan TSI,yes,tiguan_200x156
+Volkswagen,diesel,2000,110,SUV,5,5,46000,manual,Volkswagen Tiguan TDI,no,tiguan_200x156
+Volkswagen,diesel,2000,140,SUV,5,5,47000,automatic,Volkswagen Tiguan TDI,yes,tiguan_200x156
+Volkswagen,diesel,2000,177,SUV,5,5,50000,automatic,Volkswagen Tiguan TDI,yes,tiguan_200x156
+Volkswagen,gasoline,3000,250,SUV,5,5,62000,automatic,Volkswagen Touareg 3.0 TFSI,yes,touareg_200x133
+Volkswagen,gasoline,3600,245,SUV,5,5,58000,automatic,Volkswagen Touareg 3.6 TFSI,yes,touareg_200x133
+Volkswagen,gasoline,4200,335,SUV,5,5,60000,automatic,Volkswagen Touareg 4.2 TFSI,yes,touareg_200x133
+Volkswagen,diesel,3000,380,SUV,5,5,65000,automatic,Volkswagen Touareg 3.0 TDI,yes,touareg_200x133
+Volkswagen,diesel,4000,450,SUV,5,5,70000,automatic,Volkswagen Touareg 4.0 TDI,yes,touareg_200x133
+Volkswagen,diesel,3000,236,SUV,5,5,60000,automatic,Volkswagen Touareg 3.0 TDI,yes,touareg_200x133
+Renault,gasoline,1200,113,sedan,4,5,20000,manual,Renault Megane 1.2 TCe,no,megane_200x156
+Renault,gasoline,1400,128,sedan,4,5,22000,manual,Renault Megane 1.4 TCe,no,megane_200x156
+Renault,gasoline,1600,112,sedan,4,5,24000,manual,Renault Megane 1.6 CVT,no,megane_200x156
+Renault,gasoline,2000,261,sedan,4,5,27000,automatic,Renault Megane RS,yes,megane_200x156
+Renault,gasoline,2000,271,sedan,4,5,29000,automatic,Renault Megane RS,yes,megane_200x156
+Renault,diesel,1500,108,sedan,4,5,20000,manual,Renault Megane 1.5 dCi,no,megane_200x156
+Renault,diesel,1600,128,sedan,4,5,22000,manual,Renault Megane 1.6 dCi,no,megane_200x156
+Renault,diesel,1900,128,sedan,4,5,24000,manual,Renault Megane 1.9 dCi,no,megane_200x156
+Renault,diesel,2000,158,sedan,4,5,25000,manual,Renault Megane 2.0 dCi,no,megane_200x156
+Renault,gasoline,1100,131,suv,4,5,23000,manual,Renault Kadjar 1.1 TCe,no,megane_200x156
+Renault,gasoline,1300,140,suv,4,5,25000,manual,Renault Kadjar 1.3 TCe,no,kadjar_200x134
+Renault,gasoline,1600,163,suv,4,5,27000,manual,Renault Kadjar 1.6 TCe,no,kadjar_200x134
+Renault,diesel,1400,110,suv,4,5,22000,manual,Renault Kadjar 1.4 TCe,no,kadjar_200x134
+Renault,diesel,1400,115,suv,4,5,23000,manual,Renault Kadjar 1.4 TCe,no,kadjar_200x134
+Renault,diesel,1600,131,suv,4,5,25000,manual,Renault Kadjar 1.6 TCe,no,kadjar_200x134
+Renault,diesel,1800,150,suv,4,5,28000,manual,Renault Kadjar 1.8 TCe,no,kadjar_200x134
+Mercedes-Benz,gasoline,1600,101,hatchback,5,5,50000,automatic,Mercedes-Benz A160,no,aclass_200x133
+Mercedes-Benz,gasoline,1800,120,hatchback,5,5,55000,automatic,Mercedes-Benz A180 BlueEFFICIENCY,no,aclass_200x133
+Mercedes-Benz,gasoline,2000,154,hatchback,5,5,58000,automatic,Mercedes-Benz A200 BlueEFFICIENCY,no,aclass_200x133
+Mercedes-Benz,gasoline,2000,208,hatchback,5,5,62000,automatic,Mercedes-Benz A250 4MATIC BlueEFFICIENCY,yes,aclass_200x133
+Mercedes-Benz,gasoline,2000,208,hatchback,5,5,65000,automatic,Mercedes-Benz A250 Sport,yes,aclass_200x133
+Mercedes-Benz,gasoline,2000,376,hatchback,5,5,75000,automatic,Mercedes-Benz A45 AMG,yes,aclass_200x133
