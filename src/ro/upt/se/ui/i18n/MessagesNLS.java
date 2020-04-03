@@ -20,6 +20,7 @@ public class MessagesNLS extends NLS {
 	public static String PAGE_DESCRIPTION;
 	public static String PAGE_TITLE;
 	public static String SUITED_VEHICLE;
+	public static String SUITED_VEHICLES_PLURAL;
 	
 	public static String NO_VEHICLE_FOUND;
 	

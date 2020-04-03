@@ -4,11 +4,20 @@ import java.util.List;
 
 public class SurveyController {
 	private SurveyModel model;
+	private boolean wizardCanceled = false;
 	
 	public SurveyController(SurveyModel model) {
 		this.model = model;
 	}
 	
+	public boolean isWizardCanceled() {
+		return wizardCanceled;
+	}
+
+	public void setWizardCanceled(boolean wizardCanceled) {
+		this.wizardCanceled = wizardCanceled;
+	}
+
 	public void setAnswer(int idx, String answer) {
 		this.model.setAnswer(idx, answer);
 	}

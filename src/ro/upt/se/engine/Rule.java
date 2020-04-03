@@ -95,6 +95,15 @@ public class Rule {
 		this.isFired = true;
 	}
 	
+	public String getAntecedent(String antecedent) {
+		for (Clause c : antecedents) {
+			if (c.getVariable().equals(antecedent)) {
+				return c.getValue();
+			}
+		}
+		return null;
+	}
+	
 	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder(this.name + "=[");

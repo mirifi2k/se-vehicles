@@ -1,7 +1,5 @@
 package ro.upt.se.ui;
 
-import java.util.List;
-
 import org.eclipse.jface.wizard.IWizardPage;
 import org.eclipse.jface.wizard.WizardPage;
 import org.eclipse.swt.SWT;
@@ -13,11 +11,8 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 
-import ro.upt.se.ComparingValue;
 import ro.upt.se.SurveyController;
-import ro.upt.se.Response;
 import ro.upt.se.ui.i18n.MessagesNLS;
-import ro.upt.se.utils.Utils;
 
 public class NinthPage extends WizardPage {
 

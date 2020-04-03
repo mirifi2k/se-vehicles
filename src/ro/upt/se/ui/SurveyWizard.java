@@ -115,4 +115,10 @@ public class SurveyWizard extends Wizard {
 	public boolean canFinish() {
 		return ninthPage.isPageComplete();
 	}
+	
+	@Override
+	public boolean performCancel() {
+		controller.setWizardCanceled(true);
+		return true;
+	}
 }

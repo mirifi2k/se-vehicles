@@ -69,13 +69,7 @@ public class Parser {
 			if (transmissions.length == 1) {
 				rule.addAntecedent(new EqualsClause("transmission", transmissions[0]));
 			} else {
-				Clause[] orClauses = new Clause[transmissions.length];
-				
-				for (int i = 0; i < types.length; i++) {
-					orClauses[i] = new EqualsClause("transmission", transmissions[i]);
-				}
-				
-				rule.addAntecedent(new OrClause("transmission", orClauses));
+				rule.addAntecedent(new EqualsClause("transmission", "both"));
 			}
 			
 			rule.addAntecedent(new EqualsClause("awd", content[10]));

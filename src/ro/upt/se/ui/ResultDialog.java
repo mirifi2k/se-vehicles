@@ -9,6 +9,7 @@ import org.eclipse.swt.widgets.Button;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Label;
@@ -30,7 +31,9 @@ public class ResultDialog extends Dialog {
 	private Shell shell;
 	
 	private SurveyController controller;
-	private Rule consequence;
+	private List<Rule> consequences;
+	
+	private int idx;
 
 	/**
 	 * Create the dialog.
@@ -42,7 +45,7 @@ public class ResultDialog extends Dialog {
 		setText(MessagesNLS.PAGE_TITLE);
 		
 		this.controller = controller;
-		this.consequence = this.runInferenceEngine();
+		this.consequences = this.runInferenceEngine();
 	}
 
 	public Object open() {
@@ -65,28 +68,28 @@ public class ResultDialog extends Dialog {
 	 * Create contents of the dialog.
 	 */
 	private void createContents() {
+		
 		shell = new Shell(getParent(), getStyle());
-		shell.setSize(480, 240);
+		shell.setSize(450, 300);
 		shell.setText(getText());
 		shell.setLayout(new GridLayout(3, false));
 
 		Label label = new Label(shell, SWT.NONE);
-		label.setText(MessagesNLS.SUITED_VEHICLE);
-		
-		GridData gd = new GridData(SWT.CENTER, SWT.FILL, true, false);
-		gd.horizontalSpan = 3;
-		label.setLayoutData(gd);
+		label.setText(consequences.size() > 1 ? MessagesNLS.SUITED_VEHICLES_PLURAL : MessagesNLS.SUITED_VEHICLE);
+		label.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, false, 3, 5));
 		
 		Label img = new Label(shell, SWT.NONE);
-		img.setLayoutData(gd);
+		img.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, false, 3, 1));
 		
 		Label vehicle = new Label(shell, SWT.NONE);
-		vehicle.setLayoutData(gd);
+		vehicle.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, false, 3, 5));
 		// vehicle.setFont(SWTResourceManager.getFont("Segoe UI", 10, SWT.BOLD));
 		
-		if (consequence != null) {
-			vehicle.setText(controller.getAnswer(2) + " " + consequence.getConsequence().getValue());
-			img.setImage(new Image(getParent().getDisplay(), getClass().getResource("/" + consequence.getImage()).getFile()));
+		if (consequences != null && !consequences.isEmpty()) {
+			String horsePower = consequences.get(0).getAntecedent("power");
+			
+			vehicle.setText(controller.getAnswer(2) + " " + consequences.get(0).getConsequence().getValue() + " (" + horsePower + "HP)");
+			img.setImage(new Image(getParent().getDisplay(), getClass().getResource("/" + consequences.get(0).getImage()).getFile()));
 		} else {
 			vehicle.setText(MessagesNLS.NO_VEHICLE_FOUND);
 		}
@@ -95,9 +98,16 @@ public class ResultDialog extends Dialog {
 		Button closeButton = new Button(shell, SWT.NONE);
 		Button nextButton = new Button(shell, SWT.NONE);
 		
-//		closeButton.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, false, false));
-//		prevButton.setLayoutData(new GridData(SWT.LEFT, SWT.CENTER, false, false));
-//		prevButton.setLayoutData(new GridData(SWT.RIGHT, SWT.CENTER, false, false));
+		closeButton.setLayoutData(new GridData(SWT.FILL, SWT.BOTTOM, true, true, 1, 1));
+		prevButton.setLayoutData(new GridData(SWT.FILL, SWT.BOTTOM, true, true, 1, 1));
+		nextButton.setLayoutData(new GridData(SWT.FILL, SWT.BOTTOM, true, true, 1, 1));
+		
+		prevButton.setText("Previous");
+		closeButton.setText("OK");
+		nextButton.setText("Next");
+		
+		nextButton.setEnabled(consequences.size() > 1);
+		prevButton.setEnabled(consequences.size() > 1);
 		
 		closeButton.addSelectionListener(new SelectionAdapter() {
 			@Override
@@ -106,20 +116,36 @@ public class ResultDialog extends Dialog {
 			}
 		});
 		
-		GridData gd2 = new GridData(SWT.CENTER, SWT.FILL, true, true);
-		gd2.widthHint = 50;
+		prevButton.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				idx = (idx - 1) < 0 ? (consequences.size() - 1) : (idx - 1);
+				
+				String horsePower = consequences.get(idx).getAntecedent("power");
+				
+				vehicle.setText(controller.getAnswer(2) + " " + consequences.get(idx).getConsequence().getValue() + " (" + horsePower + "HP)");
+				img.setImage(new Image(getParent().getDisplay(), getClass().getResource("/" + consequences.get(idx).getImage()).getFile()));
+				
+				shell.layout();
+			}
+		});
 		
-		closeButton.setText("Close");
-		closeButton.setLayoutData(gd2);
-		
-		prevButton.setText("<");
-		prevButton.setLayoutData(gd2);
-		
-		nextButton.setText(">");
-		nextButton.setLayoutData(gd2);
+		nextButton.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				idx = (idx + 1 > consequences.size() - 1) ? 0 : (idx + 1);
+				
+				String horsePower = consequences.get(idx).getAntecedent("power");
+				
+				vehicle.setText(controller.getAnswer(2) + " " + consequences.get(idx).getConsequence().getValue() + " (" + horsePower + "HP)");
+				img.setImage(new Image(getParent().getDisplay(), getClass().getResource("/" + consequences.get(idx).getImage()).getFile()));
+				
+				shell.layout();
+			}
+		});
 	}
 	
-	private Rule runInferenceEngine() {
+	private List<Rule> runInferenceEngine() {
 		InferenceEngine inferenceEngine = new InferenceEngineImpl();
 		Response response = controller.getResponse();
 		Parser p = new Parser();
@@ -143,11 +169,7 @@ public class ResultDialog extends Dialog {
 		inferenceEngine.addFact(response.getSeatsNumber());
 		
 		// TODO modify
-		if (inferenceEngine.getConsequence().size() > 0) {
-			return inferenceEngine.getConsequence().get(0);
-		}
-		return null;
+		return inferenceEngine.getConsequence();
 	}
-
 }
 
