@@ -22,20 +22,19 @@ public class Main {
 	}
 	
 	public static void testBackwardChain(InferenceEngine rie) {
-		rie.addFact(new EqualsClause("brand", "BMW"));
-	    rie.addFact(new EqualsClause("fuel", "diesel"));
-	    rie.addFact(new EqualsClause("capacity", "2000"));
-	    rie.addFact(new LessEqualClause("power", "306"));
+		rie.addFact(new NotEqualClause(new EqualsClause("brand", "none")));
+	    rie.addFact(new EqualsClause("fuel", "gasoline"));
+	    rie.addFact(new GreaterEqualClause("capacity", "1000"));
+	    rie.addFact(new GreaterEqualClause("power", "100"));
 	    rie.addFact(new EqualsClause("type", "sedan"));
 	    rie.addFact(new EqualsClause("seats", "5"));
-	    rie.addFact(new LessEqualClause("price", "90000"));
-	    rie.addFact(new GreaterEqualClause("price", "50000"));
+	    rie.addFact(new GreaterEqualClause("price", "10000"));
 	    rie.addFact(new EqualsClause("transmission", "automatic"));
 	    rie.addFact(new EqualsClause("awd", "no"));
 
 	    System.out.println("Infer: vehicle");
 
-	    Rule conclusion = rie.getConsequence();
+	    Rule conclusion = rie.getConsequence().get(0);
 	    //String image = Main.class.getResource("/" + conclusion.getImage()).getFile();
 
 	    System.out.println("Conclusion: " + conclusion.getConsequence());

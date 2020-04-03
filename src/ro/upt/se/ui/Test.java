@@ -9,15 +9,14 @@ import org.eclipse.swt.widgets.Shell;
 
 import ro.upt.se.SurveyController;
 import ro.upt.se.SurveyModel;
+import ro.upt.se.ui.i18n.MessagesNLS;
 
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.widgets.Group;
 
 public class Test {
 
@@ -60,7 +59,7 @@ public class Test {
 		shell = new Shell();
 		shell.setMinimumSize(new Point(480, 240));
 		shell.setSize(480, 240);
-		shell.setText("SWT Application");
+		shell.setText(MessagesNLS.APP_TITLE);
 		shell.setLayout(new GridLayout(1, false));
 		
 		Label img = new Label(shell, SWT.NONE);
@@ -70,7 +69,7 @@ public class Test {
 		
 		Label label = new Label(shell, SWT.NONE);
 		label.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, false));
-		label.setText("Vehicles Expert System");
+		label.setText(MessagesNLS.APP_TITLE);
 		
 		Button startWizard = new Button(shell, SWT.NONE);
 		startWizard.setLayoutData(new GridData(SWT.CENTER, SWT.CENTER, true, true));
@@ -89,8 +88,10 @@ public class Test {
 			     * After the dialog is closed -> open the result dialog
 			     */
 			    
-			    ResultDialog resultDialog = new ResultDialog(shell, SWT.BORDER, controller);
-				resultDialog.open();
+			    if (!shell.isDisposed()) {
+			    	ResultDialog resultDialog = new ResultDialog(shell, SWT.BORDER, controller);
+			    	resultDialog.open();
+			    }
 			}
 		});
 	}

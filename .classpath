@@ -7,12 +7,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/razva/Desktop/swt.jar"/>
-	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.core.commands_3.9.600.v20191122-2109.jar"/>
-	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.equinox.common_3.10.600.v20191004-1420.jar"/>
-	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.osgi_3.15.100.v20191114-1701.jar"/>
-	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.ui.workbench_3.117.0.v20191126-1131.jar"/>
-	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.jface_3.18.0.v20191122-2109.jar"/>
-	<classpathentry kind="lib" path="C:/Users/razva/Desktop/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/New folder/Desktop/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/New folder/Desktop/swt.jar"/>
+	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.core.commands_3.9.700.v20191217-1850.jar"/>
+	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.equinox.common_3.11.0.v20200206-0817.jar"/>
+	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.jface_3.19.0.v20200218-1607.jar"/>
+	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.ui.workbench_3.118.0.v20200222-0719.jar"/>
+	<classpathentry kind="var" path="ECLIPSE_HOME/plugins/org.eclipse.osgi_3.15.200.v20200214-1600.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

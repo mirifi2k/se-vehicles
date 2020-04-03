@@ -26,6 +26,7 @@ public class EighthPage extends WizardPage {
 	  
 	public EighthPage(String pageName, SurveyController controller) {
 		super(pageName, MessagesNLS.Q8, MessagesNLS.DEFAULT_IMAGE);
+		
 		this.setDescription(MessagesNLS.PAGE_DESCRIPTION);
 		this.controller = controller;
 	}

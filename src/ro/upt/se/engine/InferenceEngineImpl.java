@@ -28,11 +28,15 @@ public class InferenceEngineImpl implements InferenceEngine {
     }
 
     @Override 
-    public Rule getConsequence() {
-    	Rule conclusion = null;
+    public List<Rule> getConsequence() {
+    	List<Rule> conclusions = new ArrayList<>();
         List<Clause> unprovedConditions = new ArrayList<>();
 
         for (Rule rule : rules) {
+        	if (conclusions.contains(rule)) {
+        		continue;
+        	}
+        	
             rule.resetIterator();
             
             boolean goalReached = true;
@@ -53,12 +57,12 @@ public class InferenceEngineImpl implements InferenceEngine {
             }
             
             if (goalReached) {
-                conclusion = rule;
-                break;
+            	conclusions.add(rule);
+                continue;
             }
         }
 
-        return conclusion;
+        return conclusions;
     }
 
     public boolean isFact(Clause goal, List<Clause> unprovedConditions) {

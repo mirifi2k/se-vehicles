@@ -1,6 +1,5 @@
 package ro.upt.se.engine;
 
-import java.util.Collection;
 import java.util.List;
 
 import ro.upt.se.clauses.Clause;
@@ -26,7 +25,7 @@ public interface InferenceEngine {
 	 * 
 	 * @return The consequence clause.
 	 */
-	Rule getConsequence();
+	List<Rule> getConsequence();
 	
 	/**
 	 * This method returns the Knowledge Base of the Expert System.
@@ -55,5 +54,10 @@ public interface InferenceEngine {
 	 */
 	List<Rule> match();
 	
+	/**
+	 * Adds all the rules to the Knowledge Base.
+	 * 
+	 * @param rules the rules that need to be added.
+	 */
 	void addAllRules(List<Rule> rules);
 }

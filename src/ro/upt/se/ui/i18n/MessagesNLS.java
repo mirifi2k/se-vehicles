@@ -15,9 +15,13 @@ public class MessagesNLS extends NLS {
 	public static final String BUNDLE_NAME = "ro.upt.se.ui.i18n.Messages";
 	public static final ImageDescriptor DEFAULT_IMAGE = ImageDescriptor.createFromURL(SurveyWizard.class.getResource("/resized_a7_120x80.png"));
 	
+	public static String APP_TITLE;
+	
 	public static String PAGE_DESCRIPTION;
 	public static String PAGE_TITLE;
 	public static String SUITED_VEHICLE;
+	
+	public static String NO_VEHICLE_FOUND;
 	
 	public static String Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8, Q9;
 	
